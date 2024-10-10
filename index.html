@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Team</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      #result {
+        margin-top: 20px;
+      }
+      .input-container {
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pembagian Tim Pemain</h1>
+    <label for="playersInput"
+      >Masukkan nama pemain (pisahkan dengan spasi):</label
+    >
+
+    <div class="input-container">
+      <p>Pilih jenis input:</p>
+      <label>
+        <input type="radio" name="inputType" value="genap" checked /> Genap
+      </label>
+      <label>
+        <input type="radio" name="inputType" value="ganjil" /> Ganjil
+      </label>
+    </div>
+
+    <input type="text" id="playersInput" />
+    <button id="generateButton">Buat Tim</button>
+
+    <div id="result"></div>
+
+    <script src="tagTeam.js"></script>
+  </body>
+</html>
